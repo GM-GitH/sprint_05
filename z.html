@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChY8toCc4sAHCuyzHQR3-J_HrMji4LyHI&callback=initMap"></script> -->
+    <title>test</title>
+    <style>
+      #map {
+        max-width: 600px;
+        height: 500px;
+        margin: 0 auto;
+      }
+    </style>
+    <script type="module">
+        console.log("log test")
+        import markers from "./src/data/markers";
+    //   function initMap() {
+    //     const markLatLng = { lat: 40.416668, lng: -3.704064 };
+    //     map = new google.maps.Map(document.getElementById("map"), {
+    //       center: markLatLng,
+    //       zoom: 6,
+    //     });
+    //     marker = new google.maps.Marker({
+    //       position: markLatLng,
+    //       map,
+    //       icon: "../src/assets/icons/marker25.png",
+    //       // label: "Hotel Miranda",
+    //       // title: "Hotel Miranda",
+    //     });
+    //     marker = new google.maps.Marker({
+    //       // position: markLatLng,
+    //       map,
+    //       // label: "User",
+    //       // title: "User",
+    //     });
+    //     getPosition();
+    //   }
+
+    //   function getPosition() {
+    //     if (navigator.geolocation) {
+    //       let options = { timeout: 600000 };
+    //       geoLoc = navigator.geolocation;
+    //       watchID = geoLoc.watchPosition(showLocationOnMap, errorHandler, options);
+    //     } else {
+    //       console.log("Geo not supported");
+    //     }
+    //   }
+
+    //   function showLocationOnMap(position) {
+    //     let latitude = position.coords.latitude;
+    //     let longitude = position.coords.longitude;
+    //     console.log("Latitude: " + latitude + " Longitude: " + longitude);
+
+    //     const myLatLng = { lat: latitude, lng: longitude };
+    //     marker.setPosition(myLatLng);
+    //     map.setCenter(myLatLng);
+    //   }
+
+    //   function errorHandler(err) {
+    //     if (err.code == 1) {
+    //       console.log("Denied by user");
+    //     } else {
+    //       console.log("Not Found");
+    //     }
+    //   }
+    </script>
+  </head>
+  <body>
+    <div id="map"></div>
+  </body>
+</html>

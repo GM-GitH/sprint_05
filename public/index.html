@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/styles/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>Hotel Miranda</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar__bg">
+        <div class="navbar__bar">
+          <div class="navbar__burger">
+            <img class="navbar__burger__open" src="../src/assets/icons/menu-burger.png" />
+            <img class="navbar__burger__close hidden" src="../src/assets/icons/menu-close.png" />
+          </div>
+          <a href="./index.html">
+            <div class="navbar__logo__bg">
+              <img class="navbar__logo__bg__h" src="../src/assets/icons/h.png" alt="logo" />
+            </div>
+            <img class="navbar__logo__title" src="../src/assets/icons/navbar-miranda.png" alt="Hotel Miranda" />
+          </a>
+          <img class="navbar__user" src="../src/assets/icons/user.png" alt="user logo" />
+          <img class="navbar__search" src="../src/assets/icons/search.png" alt="search" />
+          <ul class="navbar__menu hidden">
+            <a class="navbar__menu__a" href="./02-about.html">
+              <li class="navbar__menu__li navbar__menu__li--1">About Us</li>
+            </a>
+            <a class="navbar__menu__a" href="./03-rooms.html">
+              <li class="navbar__menu__li">Rooms</li>
+            </a>
+            <a class="navbar__menu__a" href="./05-offers.html">
+              <li class="navbar__menu__li">Offers</li>
+            </a>
+            <a class="navbar__menu__a" href="./06-contact.html">
+              <li class="navbar__menu__li">Contact</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="welcome">
+      <div class="welcome__container">
+        <p class="welcome__container__p1">THE ULTIMATE LUXURY EXPERIENCE</p>
+        <p class="welcome__container__p2">The Perfect Base For You</p>
+        <button class="welcome__container__btn welcome__container__btn--default">TAKE A TOUR</button>
+        <button class="welcome__container__btn">LEARN MORE</button>
+      </div>
+    </div>
+    <div class="availability">
+      <form class="availability__form" action="#">
+        <label class="availability__form__label" for="arrival">Arrival Date</label>
+        <img src="../src/assets/icons/calendar.png" alt="calendar" />
+        <input
+          class="availability__form__input"
+          type="text"
+          id="arrival"
+          name="arrival"
+          placeholder="24th march 2020"
+          onfocus="(this.type='date')"
+          onblur="if(this.value==''){this.type='text'}"
+        />
+        <label class="availability__form__label" for="departure">LeDeparture Date</label>
+        <img src="../src/assets/icons/calendar.png" alt="calendar" />
+        <input
+          class="availability__form__input"
+          type="text"
+          id="departure"
+          name="departure"
+          placeholder="30th march 2020"
+          onfocus="(this.type='date')"
+          onblur="if(this.value==''){this.type='text'}"
+        />
+        <button class="availability__form__btn" type="none">CHECK AVAILABILITY</button>
+      </form>
+    </div>
+    <div class="about__us" id="about-us">
+      <div class="about__us__container1">
+        <p class="about__us__container1__p1">ABOUT US</p>
+        <p class="about__us__container1__p2">Discover Our Underground.</p>
+        <p class="about__us__container1__p3">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <button class="about__us__container1__btn">BOOK NOW</button>
+      </div>
+      <div class="about__us__container2">
+        <div class="about__us__container2__div about__us__container2__div--img"></div>
+        <div class="about__us__container2__div about__us__container2__div--info">
+          <img src="../src/assets/icons/team.png" alt="team" />
+          <p class="about__us__container2__div__p1">Strong Team</p>
+          <p class="about__us__container2__div__p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+        </div>
+      </div>
+    </div>
+    <div class="rooms" id="rooms">
+      <div class="rooms__container1">
+        <div class="rooms__container1__div rooms__container1__div--img"></div>
+        <div class="rooms__container1__div rooms__container1__div--info">
+          <img src="../src/assets/icons/calendar-large.png" alt="team" />
+          <p class="rooms__container1__div__p1">Luxury Room</p>
+          <p class="rooms__container1__div__p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+        </div>
+      </div>
+      <div class="rooms__container2">
+        <p class="rooms__container2__p1">ROOMS</p>
+        <p class="rooms__container2__p2">Hand Picked Rooms</p>
+        <img class="rooms__container2__img" src="../src/assets/icons/room-services.png" alt="room services icons" />
+        <!--<div class="rooms__container2__slider"></div>-->
+        <!--------------- Slider main container ----------->
+        <div class="swiper mySwiper rooms__container2__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="rooms__container2__slider__img" src="../src/assets/img/rooms/room-luxury.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="rooms__container2__slider__img" src="../src/assets/img/rooms/room-luxury2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="rooms__container2__slider__img" src="../src/assets/img/rooms/room-luxury3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <!----------------------- END ---------------------->
+        <div class="rooms__container2__description">
+          <p class="rooms__container2__description__p1">Minimal Duplex Room</p>
+          <p class="rooms__container2__description__p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <p class="rooms__container2__description__p3">$345<label class="rooms__container2__description__p3--mini">/Night</label></p>
+        </div>
+      </div>
+    </div>
+    <div class="video">
+      <p class="video__p1">INTRO VIDEO</p>
+      <p class="video__p2">Meet With Our Luxury Place.</p>
+      <p class="video__p3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.
+      </p>
+      <div class="video__container">
+        <iframe
+          class="video__container__iframe"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Bu3Doe45lcU?controls=0&amp;start=25&end=75&rel=0&showinfo=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <button class="video__btn">BOOK NOW</button>
+    </div>
+    <div class="facilities">
+      <p class="facilities__p1">FACILITIES</p>
+      <p class="facilities__p2">Core Features</p>
+      <div class="facilities__container">
+        <img class="facilities__container__img" src="../src/assets/icons/stars.png" alt="" />
+        <p class="facilities__container__p1">Have High Rating</p>
+        <p class="facilities__container__p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="menu__img1"></div>
+      <p class="menu__p1">MENU</p>
+      <p class="menu__p2">Our Foods Menu</p>
+      <div class="menu__div1">
+        <div class="menu__div1__food">
+          <img class="menu__div1__food__img" src="../src/assets/img/menu-bacon2.jpeg" alt="Eggs and bacon" />
+          <p class="menu__div1__food__p1">Eggs & Bacon</p>
+          <p class="menu__div1__food__p2">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+        </div>
+        <div class="menu__div1__food">
+          <img class="menu__div1__food__img" src="../src/assets/img/menu-coffee.jpeg" alt="Coffee cups" />
+          <p class="menu__div1__food__p1">Tea or Coffee</p>
+          <p class="menu__div1__food__p2">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+        </div>
+        <div class="menu__div1__food">
+          <img class="menu__div1__food__img" src="../src/assets/img/menu-oatmeal.jpeg" alt="Oatmeal" />
+          <p class="menu__div1__food__p1">Chia Oatmeal</p>
+          <p class="menu__div1__food__p2">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+        </div>
+      </div>
+      <div class="menu__div2"></div>
+    </div>
+    <div class="counter">
+      <div class="counter__div">
+        <img src="../src/assets/icons/spaceship.png" alt="" />
+        <p class="counter__div__p1">84k+</p>
+        <p class="counter__div__p2">Projects are Completed</p>
+      </div>
+      <div class="counter__div">
+        <img src="../src/assets/icons/team-main.png" alt="" />
+        <p class="counter__div__p1">10M+</p>
+        <p class="counter__div__p2">Active Backers Around World</p>
+      </div>
+      <div class="counter__div">
+        <img src="../src/assets/icons/grow.png" alt="" />
+        <p class="counter__div__p1">02k+</p>
+        <p class="counter__div__p2">Categories Served</p>
+      </div>
+      <div class="counter__div">
+        <img src="../src/assets/icons/book.png" alt="" />
+        <p class="counter__div__p1">100M+</p>
+        <p class="counter__div__p2">Idea Raised Funds</p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__container">
+        <div class="footer__container__logo"></div>
+        <p class="footer__container__description">
+          Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitat ion ullamco laboris nisi.
+        </p>
+        <div class="footer__container__social">
+          <div class="footer__container__social__div">
+            <img src="../src/assets/icons/social-fb.svg" alt="facebook" />
+          </div>
+          <div class="footer__container__social__div">
+            <img src="../src/assets/icons/social-tw.svg" alt="twitter" />
+          </div>
+          <div class="footer__container__social__div">
+            <img src="../src/assets/icons/social-be.svg" alt="behance" />
+          </div>
+          <div class="footer__container__social__div">
+            <img src="../src/assets/icons/social-in.svg" alt="linkedin" />
+          </div>
+          <div class="footer__container__social__div">
+            <img src="../src/assets/icons/social-yt.svg" alt="youtube" />
+          </div>
+        </div>
+        <p class="footer__container__title">Services.</p>
+        <ul>
+          <li>+ Resturent & Bar</li>
+          <li>+ Swimming Pool</li>
+          <li>+ Wellness & Spa</li>
+          <li>+ Restaurant</li>
+          <li>+ Conference Room</li>
+          <li>+ Coctail Party House</li>
+          <li>+ Gaming Zone</li>
+          <li>+ Marrige Party</li>
+          <li>+ Party Planning</li>
+          <li>+ Tour Consultancy</li>
+          <li style="opacity: 0">+</li>
+        </ul>
+        <p class="footer__container__title">Contact Us.</p>
+        <div class="footer__container__contact">
+          <img src="../src/assets/icons/phone.png" alt="phone logo" />
+          <p class="footer__container__contact__p1">Phone Number</p>
+          <p class="footer__container__contact__p2">+987 876 765 76 577</p>
+        </div>
+        <div class="footer__container__contact">
+          <img src="../src/assets/icons/message.png" alt="phone logo" />
+          <p class="footer__container__contact__p1">E-mail</p>
+          <p class="footer__container__contact__p2">example@contoso.com</p>
+        </div>
+        <div class="footer__container__contact">
+          <img src="../src/assets/icons/map.png" alt="phone logo" />
+          <p class="footer__container__contact__p1">Location</p>
+          <p class="footer__container__contact__p2">St. Princesa, Madrid</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <div class="footer__copyright__container">
+        <p class="footer__copyright__container__p1">Copyright By@Example - 2020</p>
+        <p>Terms of use | Privacy Environmental Policy</p>
+      </div>
+    </div>
+    <script src="../src/scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>

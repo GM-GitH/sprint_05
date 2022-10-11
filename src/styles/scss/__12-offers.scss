@@ -1,0 +1,160 @@
+.offers {
+  max-width: 600px;
+  background-color: var(--FFFFFF-color);
+  padding: 20px;
+  margin: 0 auto;
+  &__img {
+    position: relative;
+    width: 100%;
+    background-image: url(../../../src/assets/img/room-minimal.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--BDBDBD-color);
+    padding-top: 60%;
+    margin: 18px auto 16px;
+    &__price {
+      position: absolute;
+      text-align: right;
+      right: 15px;
+      bottom: 3px;
+      font-family: var(--archivo-font);
+      font-weight: 700;
+      &__old {
+        color: var(--BEAD8E-color);
+        font-size: 23px;
+        line-height: 25px;
+        margin-bottom: 5px;
+        text-decoration: line-through;
+      }
+      &__new {
+        color: var(--DE5777-color);
+        font-size: 30px;
+        line-height: 32px;
+      }
+      &--mini {
+        font-size: 12px;
+      }
+    }
+  }
+  &__container1 {
+    background-color: var(--FFFFFF-color);
+    padding: 0 20px 32px 20px;
+    box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+    margin-bottom: 32px;
+    &__p1 {
+      color: var(--777777-color);
+      font-family: var(--archivo-font);
+      font-size: 14px;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    &__p2 {
+      color: var(--222222-color);
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: -1px;
+      margin-bottom: 16px;
+    }
+    &__p3 {
+      color: var(--777777-color);
+      font-family: var(--roboto-font);
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 24px;
+    }
+    &__amenities {
+      padding: 0 20px;
+      &__img {
+        height: 165px;
+        background-image: url(../../../src/assets/img/amenities2.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin: 0 auto 24px;
+      }
+    }
+    &__btn {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      padding: 22px 57px;
+      border: 2px solid var(--777777-color);
+      background-color: var(--F9F9F9-color);
+      color: var(--777777-color);
+      &:hover {
+        color: var(--FFFFFF-color);
+        background-color: var(--BEAD8E-color);
+        border: 2px solid var(--BEAD8E-color);
+      }
+    }
+  }
+  &__container2 {
+    max-width: 600px;
+    background-color: var(--222222-color);
+    text-align: center;
+    padding: 48px 20px 48px 20px;
+    margin: 0 auto 60px;
+    &__p1 {
+      color: var(--BEAD8E-color);
+      font-family: var(--archivo-font);
+      font-size: 14px;
+      letter-spacing: 3px;
+      margin-bottom: 25px;
+    }
+    &__p2 {
+      color: var(--FFFFFF-color);
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: -1px;
+      margin-bottom: 48px;
+    }
+    &__slider {
+      background-image: url(../../../src/assets/img/room-minimal.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: var(--BDBDBD-color);
+      height: 240px;
+    }
+    &__description {
+      background-color: var(--FFFFFF-color);
+      padding: 19px 24px;
+      &__img {
+        margin-top: -50px;
+      }
+      &__p1 {
+        font-size: 24px;
+        letter-spacing: -1px;
+        margin-bottom: 16px;
+      }
+      &__p2 {
+        color: var(--777777-color);
+        font-family: var(--roboto-font);
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 12px;
+      }
+      &__p3 {
+        color: var(--BEAD8E-color);
+        font-family: var(--archivo-font);
+        font-weight: 700;
+        font-size: 16px;
+        &__btn {
+          margin-left: 20px;
+          font-family: var(--archivo-font);
+          font-size: 16px;
+          font-weight: 700;
+          border: none;
+          background-color: var(--FFFFFF-color);
+          color: var(--BDBDBD-color);
+          &:hover {
+            color: var(--BEAD8E-color);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

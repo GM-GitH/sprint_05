@@ -1,0 +1,248 @@
+.about__us {
+  max-width: 600px;
+  margin: 60px auto 0 auto;
+  font-family: var(--archivo-font);
+  color: var(--777777-color);
+  &__container1 {
+    background-color: var(--F9F9F9-color);
+    padding: 38px 20px 175px 20px;
+    &__p1 {
+      font-size: 13px;
+      letter-spacing: 3px;
+      font-weight: 700;
+    }
+    &__p2 {
+      font-family: var(--tt-font);
+      color: var(--111111-color);
+      font-size: 56px;
+      margin-top: 30px;
+      letter-spacing: -1px;
+      word-wrap: break-word;
+    }
+    &__p3 {
+      font-size: 14px;
+      line-height: 24px;
+      margin-top: 16px;
+    }
+    &__btn {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      padding: 22px 57px;
+      border: 2px solid var(--777777-color);
+      background-color: var(--F9F9F9-color);
+      color: var(--777777-color);
+      margin-top: 24px;
+      &:hover {
+        color: var(--FFFFFF-color);
+        background-color: var(--BEAD8E-color);
+        border: 2px solid var(--BEAD8E-color);
+      }
+    }
+  }
+  &__container2 {
+    background-color: var(--FFFFFF-color);
+    padding: 50px;
+    &__div {
+      max-width: 400px;
+      margin: 0 auto;
+      &--img {
+        background-image: url(../../../src/assets/img/strong-team.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        border-radius: 4px;
+        height: 300px; /*********************************************************** REPLACE WITH PHOTO */
+        background-color: var(--777777-color);
+        margin-top: -170px;
+      }
+      &--info {
+        background-image: url("../../../src/assets/icons/team-bg.png");
+        background-repeat: no-repeat;
+        background-position: right 50px;
+        text-align: center;
+        padding: 50px 35px 38px 35px;
+        box-shadow: 0px 8px 16px rgba(34, 34, 34, 0.02);
+      }
+      &__p1 {
+        font-family: var(--tt-font);
+        font-size: 30px;
+        margin-top: 29px;
+        margin-bottom: 21px;
+      }
+      &__p2 {
+        font-family: var(--roboto-font);
+      }
+    }
+  }
+  &__container3 {
+    padding: 0 20px;
+    margin-bottom: 50px;
+    &__video {
+      display: block;
+      min-width: 100%;
+      margin: 0 auto;
+    }
+    &__p1 {
+      color: var(--222222-color);
+      font-family: var(--tt-font);
+      font-size: 32px;
+      line-height: 39px;
+      letter-spacing: -1px;
+      padding-top: 36px;
+      text-align: center;
+    }
+  }
+  &__btn {
+    max-width: 380px;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: center;
+    & img {
+      margin: 0 10px 10px 0;
+      &:hover {
+        filter: brightness(50%);
+      }
+    }
+  }
+  &__container4 {
+    padding: 20px;
+    margin-bottom: 60px;
+    box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+    &__img {
+      background-image: url(../../../src/assets/img/dinner.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 3px;
+      max-width: 400px;
+      height: 250px; /********************************************************************************** DELETE WITH PHOTO */
+      margin: 50px auto 30px auto;
+      background-color: var(--777777-color);
+    }
+    &__p1 {
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 3px;
+      margin-bottom: 26px;
+    }
+    &__p2 {
+      color: var(--222222-color);
+      font-family: var(--tt-font);
+      font-size: 40px;
+      line-height: 49px;
+      letter-spacing: -1px;
+      margin-bottom: 26px;
+    }
+    &__p3 {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+    &__btn {
+      padding: 22px 45px;
+      margin-bottom: 24px;
+      font-family: var(--archivo-font);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      background-color: var(--FFFFFF-color);
+      border: 2px solid var(--777777-color);
+      color: var(--333333-color);
+      &:hover {
+        color: var(--FFFFFF-color);
+        background-color: var(--BEAD8E-color);
+        border: 2px solid var(--BEAD8E-color);
+      }
+    }
+  }
+  &__container5 {
+    color: var(--FFFFFF-color);
+    background-color: var(--222222-color);
+    padding: 20px;
+    &__p1 {
+      text-align: center;
+      padding: 48px 0 16px 0;
+    }
+    &__p2 {
+      font-family: var(--tt-font);
+      font-size: 56px;
+      letter-spacing: -1px;
+      margin-bottom: 24px;
+    }
+    &__div {
+      padding: 18px;
+      margin-bottom: 70px;
+      background-color: var(--292929-color);
+      background-image: url(../../../src/assets/img/01-bg-dark.svg);
+      background-repeat: no-repeat;
+      background-position: top 10px right 10px;
+      & img {
+        margin: 73px 0 37px 0;
+      }
+      &__p1 {
+        font-family: var(--tt-font);
+        font-size: 30px;
+        letter-spacing: -1px;
+        margin-bottom: 28px;
+      }
+      &__p2 {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &__container6 {
+    padding: 60px 20px;
+    &__p1 {
+      font-size: 14px;
+      letter-spacing: 3px;
+      margin-bottom: 24px;
+    }
+    &__p2 {
+      color: var(--222222-color);
+      font-family: var(--tt-font);
+      font-size: 56px;
+      line-height: 60px;
+      letter-spacing: -1px;
+      margin-bottom: 36px;
+    }
+    &__facts {
+      position: relative;
+      margin-bottom: 24px;
+      &__div {
+        background-image: url(../../../src/assets/icons/arrow-right.svg);
+        background-repeat: no-repeat;
+        background-position: right 20px center;
+        margin: 0 auto 70px auto;
+        max-width: 500px;
+      }
+      & img {
+        position: absolute;
+      }
+      &__p1 {
+        text-align: center;
+        color: var(--222222-color);
+        font-family: var(--tt-font);
+        font-size: 60px;
+        line-height: 60px;
+      }
+      &__p2 {
+        text-align: center;
+        color: var(--777777-color);
+        font-family: var(--roboto-font);
+        font-size: 16px;
+      }
+    }
+    &__slider {
+      background-image: url(../../../src/assets/img/room-minimal.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: var(--777777-color);
+      height: 240px;
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.counter {
+    background-color: var(--222222-color);
+    font-family: var(--roboto-font);
+    text-align: center;
+    padding-bottom: 50px;
+    margin-bottom: 60px;
+    &__div {
+        font-weight: 700;
+        & img {
+            margin: 48px 0 16px 0;
+        }
+        &__p1 {
+            color: var(--FFFFFF-color);
+            font-size: 60px;
+            line-height: 60px;
+        }
+        &__p2 {
+            color: var(--777777-color);
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+  /* border: 0.1px solid; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --archivo-font: 'Archivo', sans-serif;
+  --roboto-font: 'Roboto', sans-serif;
+  --tt-font: 'Old Standard TT', serif;
+  --DE5777-color: #DE5777;
+  --E5E5E5-color: #E5E5E5;
+  --FFFFFF-color: #FFFFFF;
+  --F8F8F8-color: #F8F8F8;
+  --F9F9F9-color: #F9F9F9;
+  --111111-color: #111111;
+  --222222-color: #222222;
+  --292929-color: #292929;
+  --333333-color: #333333;
+  --777777-color: #777777;
+  --C2C2C2-color: #C2C2C2;
+  --BDBDBD-color: #BDBDBD;
+  --BEAD8E-color: #BEAD8E;
+}
+body {
+  min-width: 320px;
+  font-family: var(--tt-font)
+}
+.hidden {
+  display: none;
+}

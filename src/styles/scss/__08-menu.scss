@@ -1,0 +1,63 @@
+.menu {
+  max-width: 600px;
+  padding: 115px 20px 0 20px;
+  margin: 50px auto 0 auto;
+  background-image: url(../../../src/assets/icons/donut.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  &__img {
+    background-image: url(../../../src/assets/icons/donut.png);
+  }
+  &__p1 {
+    font-family: var(--archivo-font);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--777777-color);
+    margin-bottom: 24px;
+  }
+  &__p2 {
+    font-size: 56px;
+    letter-spacing: -1px;
+    color: var(--222222-color);
+    margin-bottom: 32px;
+  }
+  &__div1 {
+    max-width: 400px;
+    margin: 0 auto;
+    &__food {
+      &__img {
+        position: absolute;
+        width: 120px; /****************************************************************************** DELETE WITH PHOTO */
+        height: 120px; /***************************************************************************** DELETE WITH PHOTO */
+        background-color: var(--777777-color); /************************************************** DELETE WITH PHOTO */
+        margin-bottom: 16px;
+      }
+      &__p1 {
+        padding-top: 6px;
+        margin-left: 150px;
+        color: var(--222222-color);
+        font-size: 24px;
+        letter-spacing: -0.5px;
+      }
+      &__p2 {
+        margin: 12px 0 22px 150px;
+        font-family: var(--roboto-font);
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+  }
+  &__div2 {
+    background-image: url(../../../src/assets/img/dinner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 3px;
+    max-width: 400px;
+    height: 450px; /********************************************************************************** DELETE WITH PHOTO */
+    padding: 20px;
+    margin: 60px auto 31px auto;
+    background-color: var(--777777-color);
+  }
+}

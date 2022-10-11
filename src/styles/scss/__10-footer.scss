@@ -1,0 +1,93 @@
+.footer {
+  background-image: url(../../../src/assets/img/footer-bg-mb.svg);
+  background-size: cover;
+  &__container {
+    max-width: 600px;
+    margin: 0 auto;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    &__logo {
+      width: 245px;
+      height: 80px;
+      margin-left: -20px;
+      background-image: url(../../../src/assets/icons/logo-large.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &__description {
+      margin-top: 47px;
+      font-family: var(--archivo-font);
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--777777-color);
+    }
+    &__social {
+      margin-top: 30px;
+      &__div {
+        display: inline-block;
+        padding: 8px 8px 2px 8px;
+        margin: 2px;
+        background-color: var(--F8F8F8-color);
+        &:hover {
+          background-color: var(--BEAD8E-color);
+          img {
+            filter: brightness(200);
+          }
+        }
+      }
+    }
+    &__title {
+      font-size: 24px;
+      margin-top: 30px;
+      color: var(--222222-color);
+    }
+    & ul {
+      max-width: 400px;
+      columns: 2;
+      font-family: var(--roboto-font);
+      list-style: none;
+      color: var(--777777-color);
+      font-size: 15px;
+      line-height: 48px;
+      margin: 0 auto;
+      margin-top: 24px;
+    }
+    &__contact {
+      position: relative;
+      max-width: 400px;
+      margin: 32px auto 30px;
+      & img {
+        position: absolute;
+      }
+      & p {
+        margin-left: 60px;
+        line-height: 24px;
+      }
+      &__p1 {
+        color: var(--222222-color);
+        font-size: 20px;
+        right: 0;
+      }
+      &__p2 {
+        font-family: var(--roboto-font);
+        color: var(--777777-color);
+        font-size: 14px;
+      }
+    }
+  }
+  &__copyright {
+    background-color: var(--F8F8F8-color);
+    &__container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 16px 20px;
+      font-family: var(--roboto-font);
+      font-size: 16px;
+      font-weight: 700;
+      &__p1 {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}

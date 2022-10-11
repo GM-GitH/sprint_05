@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="../src/scripts/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChY8toCc4sAHCuyzHQR3-J_HrMji4LyHI&callback=initMap"></script>
+    <link rel="stylesheet" href="../src/styles/css/style.css" />
+    <title>Hotel Miranda | Contact</title>
+    <style>
+      #map {
+        max-width: 600px;
+        height: 500px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar__bg">
+        <div class="navbar__bar">
+          <div class="navbar__burger">
+            <img class="navbar__burger__open" src="../src/assets/icons/menu-burger.png" />
+            <img class="navbar__burger__close hidden" src="../src/assets/icons/menu-close.png" />
+          </div>
+          <a href="./index.html">
+            <div class="navbar__logo__bg">
+              <img class="navbar__logo__bg__h" src="../src/assets/icons/h.png" alt="logo" />
+            </div>
+            <img class="navbar__logo__title" src="../src/assets/icons/navbar-miranda.png" alt="Hotel Miranda" />
+          </a>
+          <img class="navbar__user" src="../src/assets/icons/user.png" alt="user logo" />
+          <img class="navbar__search" src="../src/assets/icons/search.png" alt="search" />
+          <ul class="navbar__menu hidden">
+            <a class="navbar__menu__a" href="./02-about.html">
+              <li class="navbar__menu__li navbar__menu__li--1">About Us</li>
+            </a>
+            <a class="navbar__menu__a" href="./03-rooms.html">
+              <li class="navbar__menu__li">Rooms</li>
+            </a>
+            <a class="navbar__menu__a" href="./05-offers.html">
+              <li class="navbar__menu__li">Offers</li>
+            </a>
+            <a class="navbar__menu__a" href="./06-contact.html">
+              <li class="navbar__menu__li">Contact</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="welcome">
+      <div class="welcome__container">
+        <p class="welcome__container__p1">THE ULTIMATE LUXURY</p>
+        <p class="welcome__container__p2">New Details</p>
+        <div class="breadcrumb">
+          <p><a href="./index.html">Home </a><span>|</span> Blog</p>
+        </div>
+      </div>
+    </div>
+    <div class="blog">
+      <div class="blog__container1">
+        <div class="blog__container1__info blog__container1__info--1">
+          <img class="blog__container1__info__img" src="../src/assets/icons/message.png" alt="" />
+          <p class="blog__container1__info__p blog__container1__info__p--1">Hotel Address</p>
+          <p class="blog__container1__info__p blog__container1__info__p--2">19/A, Cirikon City hall Tower</p>
+          <p class="blog__container1__info__p blog__container1__info__p--2">New York, NYC</p>
+        </div>
+        <div class="blog__container1__info blog__container1__info--2">
+          <img class="blog__container1__info__img" src="../src/assets/icons/phone.png" alt="" />
+          <p class="blog__container1__info__p blog__container1__info__p--1">Phone Number</p>
+          <p class="blog__container1__info__p blog__container1__info__p--2">+ 97656 8675 7864 7</p>
+          <p class="blog__container1__info__p blog__container1__info__p--2">+ 876 766 8675 765 6</p>
+        </div>
+        <div class="blog__container1__info blog__container1__info--3">
+          <img class="blog__container1__info__img" src="../src/assets/icons/map.png" alt="" />
+          <p class="blog__container1__info__p blog__container1__info__p--1">Email</p>
+          <p class="blog__container1__info__p blog__container1__info__p--2">info@webmail.com</p>
+          <p class="blog__container1__info__p blog__container1__info__p--2">jobs.webmail@mail.com</p>
+        </div>
+        <div class="blog__container1__img"></div>
+      </div>
+      <div class="blog__container2">
+        <form class="blog__container2__form">
+          <label class="blog__container2__form__label" for="name">
+            <img src="../src/assets/icons/icon-name.svg" alt="" />
+            <input class="blog__container2__form__input" type="text" name="name" id="name" placeholder="Your full name" required />
+          </label>
+          <label class="blog__container2__form__label" for="phone">
+            <img src="../src/assets/icons/icon-phone.svg" alt="" />
+            <input class="blog__container2__form__input" type="tel" name="phone" id="phone" placeholder="Add phone number" required />
+          </label>
+          <label class="blog__container2__form__label" for="email">
+            <img src="../src/assets/icons/icon-email.svg" alt="" />
+            <input class="blog__container2__form__input" type="email" name="email" id="email" placeholder="Enter email address" required />
+          </label>
+          <label class="blog__container2__form__label" for="subject">
+            <img src="../src/assets/icons/icon-subject.svg" alt="" />
+            <input class="blog__container2__form__input" type="text" name="subject" id="subject" placeholder="Enter subject" required />
+          </label>
+          <label class="blog__container2__form__label" for="message">
+            <img src="../src/assets/icons/icon-pencil.svg" alt="" />
+            <input class="blog__container2__form__input blog__container2__form__input--msg" type="text" name="message" id="message" placeholder="Enter message" required />
+          </label>
+          <button class="blog__container2__form__btn" type="#submit">SEND</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__container">
+        <div class="footer__container__logo"></div>
+        <p class="footer__container__description">
+          Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitat ion ullamco laboris nisi.
+        </p>
+        <div class="footer__container__social">
+          <div class="footer__container__social__div">
+            <img src="../src/assets/icons/social-fb.svg" alt="facebook" />
+          </div>
+          <div class="footer__container__social__div">
+            <img src="../src/assets/icons/social-tw.svg" alt="twitter" />
+          </div>
+          <div class="footer__container__social__div">
+            <img src="../src/assets/icons/social-be.svg" alt="behance" />
+          </div>
+          <div class="footer__container__social__div">
+            <img src="../src/assets/icons/social-in.svg" alt="linkedin" />
+          </div>
+          <div class="footer__container__social__div">
+            <img src="../src/assets/icons/social-yt.svg" alt="youtube" />
+          </div>
+        </div>
+        <p class="footer__container__title">Services.</p>
+        <ul>
+          <li>+ Resturent & Bar</li>
+          <li>+ Swimming Pool</li>
+          <li>+ Wellness & Spa</li>
+          <li>+ Restaurant</li>
+          <li>+ Conference Room</li>
+          <li>+ Coctail Party House</li>
+          <li>+ Gaming Zone</li>
+          <li>+ Marrige Party</li>
+          <li>+ Party Planning</li>
+          <li>+ Tour Consultancy</li>
+          <li style="opacity: 0">.</li>
+        </ul>
+        <p class="footer__container__title">Contact Us.</p>
+        <div class="footer__container__contact">
+          <img src="../src/assets/icons/phone.png" alt="phone logo" />
+          <p class="footer__container__contact__p1">Phone Number</p>
+          <p class="footer__container__contact__p2">+987 876 765 76 577</p>
+        </div>
+        <div class="footer__container__contact">
+          <img src="../src/assets/icons/message.png" alt="phone logo" />
+          <p class="footer__container__contact__p1">E-mail</p>
+          <p class="footer__container__contact__p2">example@contoso.com</p>
+        </div>
+        <div class="footer__container__contact">
+          <img src="../src/assets/icons/map.png" alt="phone logo" />
+          <p class="footer__container__contact__p1">Location</p>
+          <p class="footer__container__contact__p2">St. Princesa, Madrid</p>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+    <div class="footer__copyright">
+      <div class="footer__copyright__container">
+        <p class="footer__copyright__container__p1">Copyright By@Example - 2020</p>
+        <p>Terms of use | Privacy Environmental Policy</p>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+  </body>
+</html>
