@@ -1,6 +1,6 @@
 # Hotel Miranda:
 
-### [Click aquí para ver el ejemplo](https://gm-gith.github.io/sprint_01/public/index.html)
+### [Click aquí para ver el ejemplo](https://gm-gith.github.io/sprint_05/public/06-contact.html)
 
 ### Descripción:
 Tema para gestion de hotel.
