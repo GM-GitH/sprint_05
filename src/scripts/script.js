@@ -33,7 +33,6 @@ let geoLoc;
 const markLatLng = { lat: 40.416668, lng: -3.704064 };
 
 function initMap() {
-
   const bounds = new google.maps.LatLngBounds();
   const markersArray = [];
   const map = new google.maps.Map(document.getElementById("map"), {
@@ -77,7 +76,48 @@ function initMap() {
           infoWindow.setContent("You are here");
           infoWindow.open(map);
           map.setCenter(pos);
+          const request = {
+            origins: [pos],
+            destinations: locations,
+            travelMode: google.maps.TravelMode.DRIVING,
+            unitSystem: google.maps.UnitSystem.METRIC,
+            avoidHighways: false,
+            avoidTolls: false,
+          };
+          // document.getElementById("request").innerText = JSON.stringify(request.origins, null, 2);
+          // get distance matrix response
+          const service = new google.maps.DistanceMatrixService();
+          service.getDistanceMatrix(request).then((response) => {
+            // document.getElementById("response").innerText = JSON.stringify(response.rows, null, 2);
+            document.getElementById("originAddress").innerText = JSON.stringify(response.originAddresses, null, 2);
+            document.getElementById("destinationList").innerText = JSON.stringify(response.destinationAddresses, null, 2);
+            // deleteMarkers(markersArray);
+            let origins = response.originAddresses;
+            let destinations = response.destinationAddresses;
+            let arrayResults = []
+            for (let i = 0; i < origins.length; i++) {
+              let results = response.rows[i].elements;
+              for (let j = 0; j < results.length; j++) {
+                let element = results[j];
+                let distance = element.distance.text;
+                let distanceNumber = ("00000" + element.distance.value).slice(-9)
+                let duration = element.duration.text;
+                // let from = origins[i];
+                let to = destinations[j];
+                // let selector = document.getElementById("mapList");
+                // let option = document.createElement("option")
+                // option.value = "value"
+                let option = (`${distance} to ${to} (ETA: ${duration})`)
+                arrayResults.push([distanceNumber, option])
+                // selector.add(option)
+              }
+            }
+            arrayResults.sort()
+            // console.log(arrayResults)
+            document.getElementById("response").innerText = JSON.stringify(arrayResults, null, 1);
+          });
         },
+
         () => {
           handleLocationError(true, infoWindow, map.getCenter());
         }
@@ -88,49 +128,15 @@ function initMap() {
     }
   });
 
-
-
-  //******************************************************************* initialize MATRIX services
+  //*******************************************************************
   const geocoder = new google.maps.Geocoder();
-  const service = new google.maps.DistanceMatrixService();
-
-  // build request
-  const origin1 = "Madrid, Spain";
-  const request = {
-    origins: [origin1],
-    destinations: locations,
-    travelMode: google.maps.TravelMode.DRIVING,
-    unitSystem: google.maps.UnitSystem.METRIC,
-    avoidHighways: false,
-    avoidTolls: false,
-  };
-
-  // put request on page
-  document.getElementById("request").innerText = JSON.stringify(request, null, 2);
-  // get distance matrix response
-  service.getDistanceMatrix(request).then((response) => {
-    // put response
-    document.getElementById("response").innerText = JSON.stringify(response, null, 2);
-    // show on map
-    const originList = response.originAddresses;
-    const destinationList = response.destinationAddresses;
-
-    // deleteMarkers(markersArray);
-
-  });
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.setPosition(pos);
-  infoWindow.setContent(
-    browserHasGeolocation
-      ? "Error: The Geolocation service failed."
-      : "Error: Your browser doesn't support geolocation."
-  );
+  infoWindow.setContent(browserHasGeolocation ? "Error: The Geolocation service failed." : "Error: Your browser doesn't support geolocation.");
   infoWindow.open(map);
-
 }
-
 
 window.initMap = initMap;
 
